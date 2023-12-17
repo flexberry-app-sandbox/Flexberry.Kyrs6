@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-kyrs6-покупатель-e",
+  "editForm": "i-i-s-kyrs6-покупатель-e",
+  "external": false,
+  "caption": "Покупатель",
+  "name": "IISKyrs6ПокупательL",
+  "className": "ПокупательL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kyrs6-покупатель",
+      "modelProjection": "ПокупательL"
+    }
+  ]
+}

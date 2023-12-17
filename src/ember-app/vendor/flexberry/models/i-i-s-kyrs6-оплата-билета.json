@@ -1,0 +1,190 @@
+﻿{
+  "name": "IISKyrs6ОплатаБилета",
+  "modelName": "i-i-s-kyrs6-оплата-билета",
+  "className": "ОплатаБилета",
+  "nameSpace": "IIS.Kyrs6",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "датаОплаты",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "Now",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "покупкаБилета",
+      "relatedTo": "i-i-s-kyrs6-покупка-билета",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ОплатаБилетаE",
+      "modelName": "i-i-s-kyrs6-оплата-билета",
+      "attrs": [
+        {
+          "name": "датаОплаты",
+          "caption": "Дата оплаты",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "ПунктОтправ",
+          "lookupValueField": "пунктОтправ",
+          "relationName": "ПокупкаБилета",
+          "belongsTo": [
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "ПокупкаБилета.Покупатель",
+              "belongsTo": [],
+              "hidden": false,
+              "attrs": [
+                {
+                  "name": "фИО",
+                  "caption": "Покупатель",
+                  "hidden": false,
+                  "index": 2
+                },
+                {
+                  "name": "банковскийСчет",
+                  "caption": "Банковский счет",
+                  "hidden": false,
+                  "index": 3
+                }
+              ],
+              "index": -1,
+              "type": null,
+              "caption": "",
+              "name": "покупатель",
+              "relatedTo": "i-i-s-kyrs6-покупатель",
+              "inverse": null
+            },
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "ПокупкаБилета.БилетнаяКасса",
+              "belongsTo": [],
+              "hidden": false,
+              "attrs": [
+                {
+                  "name": "наименование",
+                  "caption": "Место расчета",
+                  "hidden": false,
+                  "index": 4
+                }
+              ],
+              "index": -1,
+              "type": null,
+              "caption": "",
+              "name": "билетнаяКасса",
+              "relatedTo": "i-i-s-kyrs6-билетная-касса",
+              "inverse": null
+            }
+          ],
+          "hidden": false,
+          "attrs": [],
+          "index": 1,
+          "type": "standard",
+          "caption": "Покупка билета",
+          "name": "покупкаБилета",
+          "relatedTo": "i-i-s-kyrs6-покупка-билета",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "ОплатаБилетаL",
+      "modelName": "i-i-s-kyrs6-оплата-билета",
+      "attrs": [
+        {
+          "name": "датаОплаты",
+          "caption": "Дата оплаты",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ПокупкаБилета",
+          "belongsTo": [
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "ПокупкаБилета.Покупатель",
+              "belongsTo": [],
+              "hidden": false,
+              "attrs": [
+                {
+                  "name": "фИО",
+                  "caption": "Покупатель",
+                  "hidden": false,
+                  "index": 1
+                },
+                {
+                  "name": "банковскийСчет",
+                  "caption": "Банковский счет",
+                  "hidden": false,
+                  "index": 3
+                }
+              ],
+              "index": -1,
+              "type": null,
+              "caption": "",
+              "name": "покупатель",
+              "relatedTo": "i-i-s-kyrs6-покупатель",
+              "inverse": null
+            },
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "ПокупкаБилета.БилетнаяКасса",
+              "belongsTo": [],
+              "hidden": false,
+              "attrs": [
+                {
+                  "name": "наименование",
+                  "caption": "Место расчета",
+                  "hidden": false,
+                  "index": 2
+                }
+              ],
+              "index": -1,
+              "type": null,
+              "caption": "",
+              "name": "билетнаяКасса",
+              "relatedTo": "i-i-s-kyrs6-билетная-касса",
+              "inverse": null
+            }
+          ],
+          "hidden": false,
+          "attrs": [],
+          "index": -1,
+          "type": "default",
+          "caption": "Покупатель",
+          "name": "покупкаБилета",
+          "relatedTo": "i-i-s-kyrs6-покупка-билета",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

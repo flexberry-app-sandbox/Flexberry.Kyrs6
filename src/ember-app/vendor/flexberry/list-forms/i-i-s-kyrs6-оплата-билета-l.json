@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-kyrs6-оплата-билета-e",
+  "editForm": "i-i-s-kyrs6-оплата-билета-e",
+  "external": false,
+  "caption": "Оплата билета",
+  "name": "IISKyrs6ОплатаБилетаL",
+  "className": "ОплатаБилетаL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kyrs6-оплата-билета",
+      "modelProjection": "ОплатаБилетаL"
+    }
+  ]
+}

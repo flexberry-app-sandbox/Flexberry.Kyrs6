@@ -1,0 +1,57 @@
+﻿{
+  "applicationCaption": "Kyrs6",
+  "applicationTitle": "Kyrs6",
+  "items": [
+    {
+      "link": null,
+      "menuName": "kyrs6",
+      "caption": "Kyrs6",
+      "title": "Kyrs6",
+      "children": [
+        {
+          "link": "i-i-s-kyrs6-возврат-билета-l",
+          "menuName": null,
+          "caption": "Возврат билета",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-kyrs6-покупка-билета-l",
+          "menuName": null,
+          "caption": "Покупка билета",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-kyrs6-покупатель-l",
+          "menuName": null,
+          "caption": "Покупатель",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-kyrs6-билетная-касса-l",
+          "menuName": null,
+          "caption": "Билетная касса",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-kyrs6-перевозчик-l",
+          "menuName": null,
+          "caption": "Перевозчик",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-kyrs6-оплата-билета-l",
+          "menuName": null,
+          "caption": "Оплата билета",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

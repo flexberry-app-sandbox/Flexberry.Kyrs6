@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Покупатель",
+  "name": "IISKyrs6ПокупательE",
+  "className": "ПокупательE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kyrs6-покупатель",
+      "modelProjection": "ПокупательE"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "БилетнаяКасса",
+      "projection": "БилетнаяКассаL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Покупатель",
+      "projection": "ПокупательL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Перевозчик",
+      "projection": "ПеревозчикL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Покупка билета",
+  "name": "IISKyrs6ПокупкаБилетаE",
+  "className": "ПокупкаБилетаE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kyrs6-покупка-билета",
+      "modelProjection": "ПокупкаБилетаE"
+    }
+  ]
+}
