@@ -36,19 +36,17 @@ namespace IIS.Kyrs6
             "ПунктОтправ as \'Пункт отправления\'",
             "ПунктНазнач as \'Пункт назначения\'",
             "Место as \'Место\'",
-            "БилетнаяКасса as \'Билетная касса\'",
+            "Покупатель as \'Покупатель\'",
             "Покупатель.ФИО as \'Покупатель\'",
-            "Перевозчик.Наименование as \'Наименование\'",
+            "Перевозчик as \'Перевозчик\'",
+            "Перевозчик.Наименование as \'Переводчик\'",
+            "БилетнаяКасса as \'Билетная касса\'",
             "БилетнаяКасса.Наименование as \'Место расчета\'",
             "БилетнаяКасса.Адрес as \'Адрес расчета\'",
-            "Покупатель as \'Покупатель\'",
-            "Перевозчик as \'Перевозчик\'",
-            "Статус as \'Статус\'"}, Hidden=new string[] {
-            "Перевозчик.Наименование",
-            "БилетнаяКасса.Наименование"})]
-    [MasterViewDefineAttribute("ПокупкаБилетаE", "БилетнаяКасса", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Наименование")]
+            "Статус as \'Статус\'"})]
     [MasterViewDefineAttribute("ПокупкаБилетаE", "Покупатель", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "БанковскийСчет")]
     [MasterViewDefineAttribute("ПокупкаБилетаE", "Перевозчик", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Наименование")]
+    [MasterViewDefineAttribute("ПокупкаБилетаE", "БилетнаяКасса", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Наименование")]
     [View("ПокупкаБилетаL", new string[] {
             "ДатаПокупки as \'Дата покупки\'",
             "ВремяПокупки as \'Время покупки\'",
@@ -418,7 +416,6 @@ namespace IIS.Kyrs6
         public virtual void Печать()
         {
             // *** Start programmer edit section *** (ПокупкаБилета.Печать method implementation)
-
             return;
             // *** End programmer edit section *** (ПокупкаБилета.Печать method implementation)
         }

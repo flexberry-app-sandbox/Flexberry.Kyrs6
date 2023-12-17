@@ -4,14 +4,6 @@
       "master": null,
       "displayAttributeName": null,
       "required": false,
-      "relationName": "БилетнаяКасса",
-      "projection": "БилетнаяКассаL",
-      "detailModelName": null
-    },
-    {
-      "master": null,
-      "displayAttributeName": null,
-      "required": false,
       "relationName": "Покупатель",
       "projection": "ПокупательL",
       "detailModelName": null
@@ -22,6 +14,14 @@
       "required": false,
       "relationName": "Перевозчик",
       "projection": "ПеревозчикL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "БилетнаяКасса",
+      "projection": "БилетнаяКассаL",
       "detailModelName": null
     }
   ],

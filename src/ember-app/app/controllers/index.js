@@ -22,31 +22,30 @@ export default Controller.extend({
             link: 'i-i-s-kyrs6-возврат-билета-l',
             caption: i18n.t('forms.application.sitemap.kyrs6.i-i-s-kyrs6-возврат-билета-l.caption'),
             title: i18n.t('forms.application.sitemap.kyrs6.i-i-s-kyrs6-возврат-билета-l.title'),
-            icon: 'file',
+            icon: 'suitcase',
             children: null
           }, {
             link: 'i-i-s-kyrs6-покупка-билета-l',
             caption: i18n.t('forms.application.sitemap.kyrs6.i-i-s-kyrs6-покупка-билета-l.caption'),
             title: i18n.t('forms.application.sitemap.kyrs6.i-i-s-kyrs6-покупка-билета-l.title'),
-            icon: 'address card',
+            icon: 'archive',
             children: null
           }, {
             link: 'i-i-s-kyrs6-покупатель-l',
             caption: i18n.t('forms.application.sitemap.kyrs6.i-i-s-kyrs6-покупатель-l.caption'),
             title: i18n.t('forms.application.sitemap.kyrs6.i-i-s-kyrs6-покупатель-l.title'),
-            icon: 'archive',
+            icon: 'calendar',
             children: null
           }, {
             link: 'i-i-s-kyrs6-билетная-касса-l',
             caption: i18n.t('forms.application.sitemap.kyrs6.i-i-s-kyrs6-билетная-касса-l.caption'),
             title: i18n.t('forms.application.sitemap.kyrs6.i-i-s-kyrs6-билетная-касса-l.title'),
-            icon: 'archive',
+            icon: 'table',
             children: null
           }, {
             link: 'i-i-s-kyrs6-перевозчик-l',
             caption: i18n.t('forms.application.sitemap.kyrs6.i-i-s-kyrs6-перевозчик-l.caption'),
             title: i18n.t('forms.application.sitemap.kyrs6.i-i-s-kyrs6-перевозчик-l.title'),
-            icon: 'paperclip',
             children: null
           }, {
             link: 'i-i-s-kyrs6-оплата-билета-l',

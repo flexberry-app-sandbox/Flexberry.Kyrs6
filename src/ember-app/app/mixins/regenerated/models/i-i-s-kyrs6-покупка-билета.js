@@ -96,14 +96,14 @@ export let defineProjections = function (modelClass) {
     место: attr('Место', { index: 5 }),
     покупатель: belongsTo('i-i-s-kyrs6-покупатель', 'Покупатель', {
       фИО: attr('Покупатель', { index: 7 })
-    }, { index: 11 }),
-    перевозчик: belongsTo('i-i-s-kyrs6-перевозчик', 'Наименование', {
-      наименование: attr('Наименование', { index: 8, hidden: true })
-    }, { index: 12, hidden: true }),
+    }, { index: 6, displayMemberPath: 'банковскийСчет' }),
+    перевозчик: belongsTo('i-i-s-kyrs6-перевозчик', 'Перевозчик', {
+      наименование: attr('Переводчик', { index: 9 })
+    }, { index: 8, displayMemberPath: 'наименование' }),
     билетнаяКасса: belongsTo('i-i-s-kyrs6-билетная-касса', 'Билетная касса', {
-      наименование: attr('Место расчета', { index: 9, hidden: true }),
-      адрес: attr('Адрес расчета', { index: 10 })
-    }, { index: 6, displayMemberPath: 'наименование' }),
+      наименование: attr('Место расчета', { index: 11 }),
+      адрес: attr('Адрес расчета', { index: 12 })
+    }, { index: 10, displayMemberPath: 'наименование' }),
     статус: attr('Статус', { index: 13 })
   });
 

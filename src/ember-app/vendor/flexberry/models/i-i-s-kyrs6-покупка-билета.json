@@ -144,35 +144,8 @@
       ],
       "belongsTo": [
         {
-          "lookupValue": "Наименование",
-          "lookupValueField": "наименование",
-          "relationName": "БилетнаяКасса",
-          "belongsTo": [],
-          "hidden": false,
-          "attrs": [
-            {
-              "name": "наименование",
-              "caption": "Место расчета",
-              "hidden": true,
-              "index": 9
-            },
-            {
-              "name": "адрес",
-              "caption": "Адрес расчета",
-              "hidden": false,
-              "index": 10
-            }
-          ],
-          "index": 6,
-          "type": "standard",
-          "caption": "Билетная касса",
-          "name": "билетнаяКасса",
-          "relatedTo": "i-i-s-kyrs6-билетная-касса",
-          "inverse": null
-        },
-        {
-          "lookupValue": null,
-          "lookupValueField": null,
+          "lookupValue": "БанковскийСчет",
+          "lookupValueField": "банковскийСчет",
           "relationName": "Покупатель",
           "belongsTo": [],
           "hidden": false,
@@ -184,32 +157,59 @@
               "index": 7
             }
           ],
-          "index": 11,
-          "type": "default",
+          "index": 6,
+          "type": "standard",
           "caption": "Покупатель",
           "name": "покупатель",
           "relatedTo": "i-i-s-kyrs6-покупатель",
           "inverse": null
         },
         {
-          "lookupValue": null,
-          "lookupValueField": null,
+          "lookupValue": "Наименование",
+          "lookupValueField": "наименование",
           "relationName": "Перевозчик",
           "belongsTo": [],
-          "hidden": true,
+          "hidden": false,
           "attrs": [
             {
               "name": "наименование",
-              "caption": "Наименование",
-              "hidden": true,
-              "index": 8
+              "caption": "Переводчик",
+              "hidden": false,
+              "index": 9
             }
           ],
-          "index": 12,
-          "type": "default",
-          "caption": "Наименование",
+          "index": 8,
+          "type": "standard",
+          "caption": "Перевозчик",
           "name": "перевозчик",
           "relatedTo": "i-i-s-kyrs6-перевозчик",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Наименование",
+          "lookupValueField": "наименование",
+          "relationName": "БилетнаяКасса",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Место расчета",
+              "hidden": false,
+              "index": 11
+            },
+            {
+              "name": "адрес",
+              "caption": "Адрес расчета",
+              "hidden": false,
+              "index": 12
+            }
+          ],
+          "index": 10,
+          "type": "standard",
+          "caption": "Билетная касса",
+          "name": "билетнаяКасса",
+          "relatedTo": "i-i-s-kyrs6-билетная-касса",
           "inverse": null
         }
       ],

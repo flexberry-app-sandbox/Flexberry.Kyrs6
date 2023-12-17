@@ -87,6 +87,62 @@
     {{flexberry-validationmessage error=(v-get validationModel "место" "message")}}
   </div>
   <div class="field">
+    <label>{{t "forms.i-i-s-kyrs6-покупка-билета-e.покупатель-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.покупатель
+      displayAttributeName="банковскийСчет"
+      autocomplete=true
+      relationName="покупатель"
+      projection="ПокупательL"
+      title=(t "forms.i-i-s-kyrs6-покупка-билета-e.покупатель-caption")
+      readonly=readonly
+      componentName="покупательLookup"
+      class=(if (v-get validationModel "покупатель" "isInvalid") "error")
+      data-test-i-i-s-kyrs6-покупка-билета-e-покупатель=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "покупатель" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.покупатель.фИО
+      class=(if (v-get validationModel.покупатель "фИО" "isInvalid") "error")
+      label=(t "forms.i-i-s-kyrs6-покупка-билета-e.покупатель.фИО-caption")
+      data-test-i-i-s-kyrs6-покупка-билета-e-покупатель-фИО=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.покупатель "фИО" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-kyrs6-покупка-билета-e.перевозчик-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.перевозчик
+      displayAttributeName="наименование"
+      autocomplete=true
+      relationName="перевозчик"
+      projection="ПеревозчикL"
+      title=(t "forms.i-i-s-kyrs6-покупка-билета-e.перевозчик-caption")
+      readonly=readonly
+      componentName="перевозчикLookup"
+      class=(if (v-get validationModel "перевозчик" "isInvalid") "error")
+      data-test-i-i-s-kyrs6-покупка-билета-e-перевозчик=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "перевозчик" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.перевозчик.наименование
+      class=(if (v-get validationModel.перевозчик "наименование" "isInvalid") "error")
+      label=(t "forms.i-i-s-kyrs6-покупка-билета-e.перевозчик.наименование-caption")
+      data-test-i-i-s-kyrs6-покупка-билета-e-перевозчик-наименование=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.перевозчик "наименование" "message")}}
+  </div>
+  <div class="field">
     <label>{{t "forms.i-i-s-kyrs6-покупка-билета-e.билетнаяКасса-caption"}}</label>
     {{flexberry-lookup
       choose="showLookupDialog"
@@ -107,12 +163,12 @@
   <div class="field">
     {{flexberry-field
       readonly=true
-      value=model.покупатель.фИО
-      class=(if (v-get validationModel.покупатель "фИО" "isInvalid") "error")
-      label=(t "forms.i-i-s-kyrs6-покупка-билета-e.покупатель.фИО-caption")
-      data-test-i-i-s-kyrs6-покупка-билета-e-покупатель-фИО=true
+      value=model.билетнаяКасса.наименование
+      class=(if (v-get validationModel.билетнаяКасса "наименование" "isInvalid") "error")
+      label=(t "forms.i-i-s-kyrs6-покупка-билета-e.билетнаяКасса.наименование-caption")
+      data-test-i-i-s-kyrs6-покупка-билета-e-билетнаяКасса-наименование=true
     }}
-    {{flexberry-validationmessage error=(v-get validationModel.покупатель "фИО" "message")}}
+    {{flexberry-validationmessage error=(v-get validationModel.билетнаяКасса "наименование" "message")}}
   </div>
   <div class="field">
     {{flexberry-field
@@ -123,22 +179,6 @@
       data-test-i-i-s-kyrs6-покупка-билета-e-билетнаяКасса-адрес=true
     }}
     {{flexberry-validationmessage error=(v-get validationModel.билетнаяКасса "адрес" "message")}}
-  </div>
-  <div class="field">
-    <label>{{t "forms.i-i-s-kyrs6-покупка-билета-e.покупатель-caption"}}</label>
-    {{flexberry-lookup
-      choose="showLookupDialog"
-      remove="removeLookupValue"
-      value=model.покупатель
-      relationName="покупатель"
-      projection="ПокупательL"
-      title=(t "forms.i-i-s-kyrs6-покупка-билета-e.покупатель-caption")
-      readonly=readonly
-      componentName="покупательLookup"
-      class=(if (v-get validationModel "покупатель" "isInvalid") "error")
-      data-test-i-i-s-kyrs6-покупка-билета-e-покупатель=true
-    }}
-    {{flexberry-validationmessage error=(v-get validationModel "покупатель" "message")}}
   </div>
   <div class="field" data-test-i-i-s-kyrs6-покупка-билета-e-статус="true">
     <label>{{t "forms.i-i-s-kyrs6-покупка-билета-e.статус-caption"}}</label>
